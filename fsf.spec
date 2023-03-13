@@ -10,7 +10,7 @@ URL:            http://www.krotek.com
 Source0:        https://github.com/s-kro/fsf/blob/master/fsf.pl
 
 #Packager:       pappy
-
+BuildRequires:  perl-generators
 BuildRequires:  coreutils
 #BuildRequires:  git
 
