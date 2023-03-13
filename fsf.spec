@@ -2,12 +2,12 @@ Name:           fsf
 Version:        0.1
 
 Release:        1%{?dist}
-Summary:        FSF Current Address
+Summary:        Free Software Federation Current Address
 
 License:        MIT       
 URL:            http://www.krotek.com
 
-Source0:        https://github.com/s-kro/fsf/blob/master/fsf.pl
+Source0:        https://github.com/s-kro/fsf/blob/master/fsf.tar.xz
 
 #Packager:       pappy
 BuildRequires:  perl-generators
@@ -20,18 +20,29 @@ BuildArch:      noarch
 
 
 %description
-Updates FSF address to latest.
+Updates the Free Software Federation's address to the latest.
 
+%prep
+%setup -q -n %{name}
+rm fsf.spec
 
 %build
 
+ls
+perl Build.PL installdirs=vendor 'optimize=-O2 -g'
+./Build
+./Build manifest
+./Build dist
+##%{make_build}
+
 %install
-%{_fixperms} $RPM_BUILD_ROOT/*
+#./Build install
+#%%{_fixperms} %%{buildroot}/*
 
 #%%find_lang %%{name}
 
 %files
-%{perl_vendorlib}/*
+#%%{perl_vendorlib}/*
 
 #%%license COPYING
 %doc README.md

@@ -16,6 +16,7 @@ my $builder = Module::Build->new(
 	'File::Find::Rule'      => '0',
     },
     build_requires      => {
+	'Module::Build'       => '0.42',
 	'Test::More'          => '0.47',
     },
     meta_merge => {
