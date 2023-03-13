@@ -21,24 +21,11 @@ BuildArch:      noarch
 
 %description
 Updates FSF address to latest.
-%prep
 
-ls
-
-%setup -q
-
-
-
-%autosetup
-#./autogen.sh
 
 %build
-%configure
-
-
 
 %install
-
 %{_fixperms} $RPM_BUILD_ROOT/*
 
 #%%find_lang %%{name}
@@ -48,7 +35,7 @@ ls
 
 %{perl_vendorlib}/*
 
-%license COPYING
+#%%license COPYING
 %doc README.md
 
 %changelog
