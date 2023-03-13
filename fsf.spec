@@ -7,12 +7,14 @@ Summary:        Free Software Federation Current Address
 License:        MIT       
 URL:            http://www.krotek.com
 
-Source0:        https://github.com/s-kro/fsf/blob/master/fsf.tar.xz
+#Source0:        https://github.com/s-kro/fsf/blob/master/fsf.tar.xz
+Source0:        https://github.com/s-kro/fsf/archive/refs/heads/master.zip
 
 #Packager:       pappy
-BuildRequires:  perl-generators
+
 BuildRequires:  coreutils
-#BuildRequires:  git
+BuildRequires:  perl-generators
+BuildRequires:  perl-Module-Build
 
 Requires:       perl-File-Find-Rule
 
