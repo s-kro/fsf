@@ -31,8 +31,6 @@ Updates FSF address to latest.
 #%%find_lang %%{name}
 
 %files
-#-f  %%{name}.lang
-
 %{perl_vendorlib}/*
 
 #%%license COPYING
