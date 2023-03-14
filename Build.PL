@@ -17,7 +17,8 @@ my $builder = Module::Build->new(
     },
     build_requires      => {
 	'Module::Build'       => '0.42',
-	'Test::More'          => '0.47',
+	    'Test::More'      => '0.47',
+	    'Archive::Tar'    => '1.09'
     },
     meta_merge => {
 	resources => {

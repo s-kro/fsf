@@ -15,6 +15,7 @@ Source0:        https://github.com/s-kro/%{name}/archive/refs/tags/%{name}-%{ver
 BuildRequires:  coreutils
 BuildRequires:  perl-generators
 BuildRequires:  perl-Module-Build
+BuildRequires:  perl-Archive-Tar
 
 Requires:       perl-File-Find-Rule
 
