@@ -1,7 +1,7 @@
 Name:           fsf
 Version:        0.1
 
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Free Software Federation Current Address
 
 License:        MIT       
@@ -58,7 +58,6 @@ perl Build.PL installdirs=vendor 'optimize=-O2 -g'
 
 * Mon Mar 13 2023 pappy <skrochen@krotek.com>
 - new package built with tito
-
 
 * Mon Mar 13 2023 pappy <skrochen@krotek.com> - 0.1-1
 - Initial packaging v0.1
