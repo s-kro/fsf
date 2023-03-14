@@ -8,7 +8,7 @@ License:        MIT
 URL:            http://www.krotek.com
 
 #Source0:        https://github.com/s-kro/fsf/blob/master/fsf.tar.xz
-Source0:        https://github.com/s-kro/fsf/archive/refs/heads/master.zip
+Source0:        https://github.com/s-kro/%{name}/archive/refs/tags/%{name}-%{version}-2.tar.gz
 
 #Packager:       pappy
 
@@ -25,7 +25,7 @@ BuildArch:      noarch
 Updates the Free Software Federation's address to the latest.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}-%{version}-2
 rm fsf.spec
 
 %build
@@ -50,6 +50,12 @@ perl Build.PL installdirs=vendor 'optimize=-O2 -g'
 %doc README.md
 
 %changelog
+* Mon Mar 13 2023 Pappy Packager <skrochen@krotek.com>
+- Repackage with tito
+
+* Mon Mar 13 2023 pappy <skrochen@krotek.com> - 0.1-2
+- Repackaging v0.1
+
 * Mon Mar 13 2023 pappy <skrochen@krotek.com>
 - new package built with tito
 
