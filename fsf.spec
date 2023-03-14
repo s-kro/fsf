@@ -1,7 +1,7 @@
 Name:           fsf
-Version:        0.2
+Version:        0.1
 
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Free Software Federation Current Address
 
 License:        MIT       
