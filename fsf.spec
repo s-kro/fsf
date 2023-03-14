@@ -1,7 +1,7 @@
 Name:           fsf
-Version:        0.1
+Version:        0.2
 
-Release:        2%{?dist}
+Release:        1%{?dist}
 Summary:        Free Software Federation Current Address
 
 License:        MIT       
@@ -50,6 +50,9 @@ perl Build.PL installdirs=vendor 'optimize=-O2 -g'
 %doc README.md
 
 %changelog
+* Tue Mar 14 2023 Pappy Packager <skrochen@krotek.com> 0.2-1
+- tag 0.1-2 
+
 * Mon Mar 13 2023 Pappy Packager <skrochen@krotek.com>
 - Repackage with tito
 
